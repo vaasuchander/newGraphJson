@@ -46,7 +46,7 @@ public class NodeSerializer extends StdSerializer<NodeJson> {
 				TimeConstraintNodeJson timeConstraintJson = new TimeConstraintNodeJson();
 				timeConstraintJson.setNodeId(node.getNodeId());
 				timeConstraintJson.setConstraintDateandTime(node.getTask().getConstraintDateTime());
-				timeConstraintJson.setTask(node.getTask());
+				//timeConstraintJson.setTask(node.getTask());
 				gen.writeObject(timeConstraintJson);
 			}
 			break;
